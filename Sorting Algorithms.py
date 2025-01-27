@@ -38,7 +38,7 @@ def insertion_sort(arr):
 
 # Benchmarking and system usage monitoring
 def benchmark_sorting_algorithms():
-    input_sizes = [100, 500, 1000, 5000, 10000]
+    input_sizes = [10, 500, 1000, 10000, 50000]
     algorithms = {
         "Bubble Sort": bubble_sort,
         "Selection Sort": selection_sort,
@@ -49,7 +49,7 @@ def benchmark_sorting_algorithms():
     system_data = {"CPU": [], "RAM": [], "GPU": []}
 
     for size in input_sizes:
-        arr = np.random.randint(0, 10000, size).tolist()
+        arr = np.random.randint(0, 50000, size).tolist()
 
         for name, func in algorithms.items():
             arr_copy = arr.copy()

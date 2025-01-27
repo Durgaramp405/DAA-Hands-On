@@ -60,7 +60,7 @@ def benchmark_sorting_algorithms():
         system_data["CPU"].append(cpu_usage)
         system_data["RAM"].append(ram_usage)
 
-    # Plot runtime vs input size
+    # Runtime vs input size
     for name, runtimes in runtime_data.items():
         plt.plot(input_sizes, runtimes, label=name)
 
